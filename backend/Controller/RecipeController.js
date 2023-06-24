@@ -15,15 +15,15 @@ module.exports = {
           }
     },
 
-    // getRecipeApi: async (req, res) => {
-    //     try {
-    //       // const usersList = await Users.find().select('-_id');
-    //       const recipesList = await Recipes.find();
-    //       res.status(200).json(recipesList)
-    //     } catch (err) {
-    //       res.status(404).json({ message: err.message })
-    //     }
-    //   }, 
+    getRecipeApi: async (req, res) => {
+        try {
+          // const usersList = await Users.find().select('-_id');
+          const recipesList = await Recipes.find();
+          res.status(200).json(recipesList)
+        } catch (err) {
+          res.status(404).json({ message: err.message })
+        }
+      }, 
 
 
 }

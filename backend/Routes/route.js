@@ -5,7 +5,7 @@ const router = express.Router()
 // , deleteRecipeApii, editRecipeApi
 //api 
 router.post('/add', addRecipeApi)
-// router.get('/', getRecipeApi)
+router.get('/', getRecipeApi)
 // router.delete('/:id', deleteRecipeApii)
 // router.post(':/id', editRecipeApi)
 
