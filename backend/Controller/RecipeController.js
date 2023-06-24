@@ -23,7 +23,16 @@ module.exports = {
         } catch (err) {
           res.status(404).json({ message: err.message })
         }
-      }, 
+    },
+    
+    deleteRecipeApii:async (req, res)=>{
+        try{
+          await Recipes.deleteOne({_id: req.params.id})
+          // res.status(200).json()
+        }catch(err){
+          res.status(409).json({message:err.message})
+        }
+      }
 
 
 }
